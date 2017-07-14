@@ -12,8 +12,11 @@ restService.use(bodyParser.urlencoded({
 restService.use(bodyParser.json());
 
 restService.post('/quiz', function(req, res) {
-    if (req.body.result && req.body.result.parameters && req.body.result.parameters.echoText) {
+    if (req.body.result && req.body.result.parameters) {
         var speech = "This is a response from webhook";
+    }
+    else {
+        var speech = "Unable to recognize the request";
     }
      
     return res.json({
