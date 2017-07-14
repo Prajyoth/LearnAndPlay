@@ -1,0 +1,14 @@
+{
+  "name": "my-quiz-backend",
+  "version": "1.0.0",
+  "description": "Quiz response backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Prajyoth Bhandary",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
